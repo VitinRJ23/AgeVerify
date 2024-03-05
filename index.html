@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendação de leitura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="menu1">
+        <ul class="list">
+            <li style="text-align: center; transform: none;" >Gêneros disponíveis</li>
+            <li id="a" onclick="mouse1()">Ação</li>
+            <li id="b"onclick="mouse2()">Brasileiro</li>
+            <li id="av"onclick="mouse3()">Aventura</li>
+            <li id="c"onclick="mouse4()">Comédia</li>
+            <li id="d"onclick="mouse5()">Drama</li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Seja bem-vindo(a)!</h1>
+            <div class="para">
+                <p>Essa é uma página de recomendação de filmes, fique à vontade para sugerir novas sugestões.</p>
+            </div>
+    </header>
+    <div class="container">
+        <div class="genero">
+            <input  id="genre" type="text" placeholder="Cite o gênero desejado">
+        </div>
+        <div class="indicar">
+            <input id="btn" type="button" value="Me indique!">
+        </div>
+        <div class="clear">
+            <button onclick="reset()" id="reset">Reset</button>
+        </div>
+        <div class="rec"></div> <!--Essa div "vazia" existe para que o JS escreva algum conteúdo na tela.-->
+    </div>
+    <footer>
+        <div class="final">
+            <h3>Tem alguma sugestão de leitura? Nos envie via E-mail (teste@teste.com)</h3>
+            <span class="mail"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAANlJREFUSEvtVcENwjAMvG5CN4FJoJMAk8AmlElgE+hVsWRCLCch/VRYqipZsc93dpwOC1u3cH6sC2AL4AJg86NsTwADgJF5tES3yUmQFkaQPgZ4hcyn6c+vxq4ADiFwLl4zEAD6SuXSsug8JgDB2Yt9BhtWTc0l5uExYDUMOoeDFpuPZgbW7KOYKZEcYB8EJGYTV51i6gIQKMWG/nkEE1XrwcgCSLHJ7U8RgGZzB6C1tsa5GKD0XvwBXMW+JGq57DjGu3gX8cYeG2xUc127nGsOrOvJrFHAjXkDPIYyGQN+Vf4AAAAASUVORK5CYII="/></span>
+            <h5>Todos os direitos reservados &copy;</h5>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
